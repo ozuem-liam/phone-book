@@ -1,0 +1,14 @@
+{
+  "name": "phone-book",
+  "version": "1.0.0",
+  "description": "Phone Book Management with CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}
