@@ -6,14 +6,14 @@ const data3 = {
     lastname: "Ozuem",
     email: "oz@gmail.com",
     phone: "090423123666",
-    date: Date.now(),
+    date: new Date().getTime(),
   };
   const data2 = {
     firstname: 'gh', 
     lastname: "Williams",
     email: "oz@gmail.com",
     phone: "090423123423",
-    date: Date.now(),
+    date: new Date().getTime(),
   };
 
 describe('#addFirst', () => {
