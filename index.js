@@ -60,7 +60,6 @@ class PhoneBook {
 
     while (current) {
       if (count == index) {
-        console.log(current.phone);
         return current;
       }
       count++;
@@ -95,44 +94,12 @@ class PhoneBook {
     let current = this.head;
 
     while (current) {
-      console.log("print", current);
       current = current.next;
     }
     return;
   }
 }
 
-// const data = {
-//   firstname: 'oz',
-//   lastname: "Williams",
-//   email: "oz@gmail.com",
-//   phone: "090423123423",
-//   date: Date.now(),
-// };
-// const data2 = {
-//   firstname: 'gh',
-//   lastname: "Williams",
-//   email: "oz@gmail.com",
-//   phone: "090423123423",
-//   date: Date.now(),
-// };
-// const data3 = {
-//   firstname: 'uy',
-//   lastname: "Ozuem",
-//   email: "oz@gmail.com",
-//   phone: "090423123666",
-//   date: Date.now(),
-// };
-
-// ll.addFirst(data);
-// ll.addFirst(data2);
-// ll.addLast(data);
-// ll.addAt(data3, 0);
-// ll.removeAt(0);
-
-// ll.deleteList();
-
-// ll.printPhoneBook();
 
 PhoneBook.fromValues = function (...values) {
   const ll = new PhoneBook();
