@@ -30,12 +30,24 @@ describe('#addFirst', () => {
 })
 
 describe('#addLast', () => {
-    test('it adds the element to the end of the list', () => {
-        const ll = PhoneBook.fromValues(data3, data2);
-        ll.addLast(data3)
-        
-        expect(ll.head.next.next.data).toBe(data3)
-        expect(ll.size).toBe(3)
+    describe('add element as head if empty', () => {
+        test('it adds the element as head of the list', () => {
+            const ll = PhoneBook.fromValues();
+            ll.addLast(data3)
+            
+            expect(ll.head.data).toBe(data3)
+            expect(ll.head.next).toBeNull()
+            expect(ll.size).toBe(1)
+        })
+    })
+    describe('add element to the end', () => {
+        test('it adds the element to the end of the list', () => {
+            const ll = PhoneBook.fromValues(data3, data2);
+            ll.addLast(data3)
+            
+            expect(ll.head.next.next.data).toBe(data3)
+            expect(ll.size).toBe(3)
+        })
     })
 })
 
